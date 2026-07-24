@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gemini AI Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<script>
+function copyResponse() {
+    let text = document.getElementById("responseBox").innerText;
+
+    navigator.clipboard.writeText(text);
+
+    alert("Response copied!");
+}
+</script>
+
+<body>
+
+    <h1>🤖 Gemini AI Assistant</h1>
+
+    <form method="POST">
+
+        <textarea
+            name="prompt"
+            rows="8"
+            cols="60"
+            placeholder="Ask Gemini anything..."
+        >{{ prompt }}</textarea>
+
+        <br><br>
+
+        <button type="submit">
+            Generate Response
+        </button>
+
+    </form>
+
+    {% if response %}
+
+    <h2>Response</h2>
+
+    <div class = "response-box" id = "responseBox"> 
+        {{  response  }}
+    </div>
+
+    <br>
+
+    <button type = "button" onclick="copyResponse()">
+       📋 Copy Response
+    </button>
+    {% endif %}
+
+</body>
+</html>
