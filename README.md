@@ -1,6 +1,6 @@
 # 🚀 QSkill Python Internship Projects
 
-This repository contains the Python projects I developed during my **QSkill Python Development Internship**. These projects demonstrate my practical understanding of Python programming, web development, machine learning, natural language processing, data analysis, and automation.
+This repository showcases my Python projects developed during the QSkill Python Development Internship. These projects demonstrate practical skills in Python programming, Flask, Machine Learning, Natural Language Processing (NLP), Data Analysis, Automation, and Generative AI.
 
 ---
 
@@ -48,9 +48,21 @@ Features:
 
 ---
 
+## 🤖 Gemini AI Assistant
+
+Features:
+
+- Flask Web Application
+- Google Gemini API Integration
+- AI-powered Question Answering
+- 5–6 Line Smart Responses
+- Secure API Key using .env
+- Copy Response Button
+
+---
+
 ## 🚧 Upcoming Projects
 
-- 🤖 Gemini Integration
 - 🎨 Speech to Image Generation
 
 ---
@@ -66,6 +78,9 @@ Features:
 - TextBlob
 - HTML
 - CSS
+- Google Gemini API
+- python-dotenv
+- Git
 
 ---
 
