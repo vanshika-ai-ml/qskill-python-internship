@@ -61,9 +61,17 @@ Features:
 
 ---
 
-## 🚧 Upcoming Projects
+## 🎨 Speech to Image Generation
 
-- 🎨 Speech to Image Generation
+Features:
+
+- Speech Recognition
+- AI Image Generation
+- Voice-to-Image Conversion
+- Flask Web Application
+- Responsive UI
+- Example Voice Prompts
+- Error Handling
 
 ---
 
@@ -81,9 +89,15 @@ Features:
 - Google Gemini API
 - python-dotenv
 - Git
+- Speech Recognition
+- Pollinations AI
 
 ---
 
 ## 👩‍💻 Author
 
 **Vanshika**
+
+B.Tech Computer Science Engineering Student
+
+Python Developer | AI/ML Learner | Data Analytics Enthusiast
