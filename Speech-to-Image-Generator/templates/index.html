@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Speech to Image Generator</title>
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="badge">✨ AI Powered</div>
+
+<h1>🎙️ Speech to Image Generator</h1>
+
+<p class="subtitle">
+Turn your voice into AI-generated artwork instantly.
+</p>
+
+<div class="steps">
+🎙️ Speak → 🧠 AI Processing → 🖼️ Image Generated
+</div>
+
+<form action="/listen" method="POST">
+
+<button id="speakBtn" type="submit">
+
+🎤 Start Speaking
+
+</button>
+
+</form>
+
+<div class="speech-box">
+
+<h3>Recognized Speech</h3>
+
+<p>{{ speech }}</p>
+
+</div>
+
+{% if error %}
+
+<div class = "error-box">
+    {{error}}
+</div>
+
+{% endif %}
+
+
+{% if image %}
+
+<div class="image-card">
+
+<h2>🖼 Generated Image</h2>
+
+<img src="{{ image }}" alt="Generated Image">
+
+</div>
+
+{% endif %}
+
+<footer>
+Made with ❤️ using Flask, SpeechRecognition & Pollinations AI
+</footer>
+
+</div>
+
+<div class="examples">
+
+    <h3>✨ Try saying:</h3>
+
+    <p>🐉 "Dragon flying over snowy mountains"</p>
+
+    <p>🌇 "Peaceful city during sunset"</p>
+
+    <p>🚀 "Astronaut riding a horse on Mars"</p>
+
+    <p>🦄 "Magical unicorn in an enchanted forest"</p>
+
+    <p>🏰 "Beautiful castle beside a waterfall"</p>
+
+</div>
+
+</body>
+
+</html>
